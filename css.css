@@ -50,18 +50,19 @@ summary {
 	font-weight: normal;
 	font-size: 18px;
 	color: #4D4646;
-	margin: -8px -17px;
+	
 }
 
 .note {
 	position: relative;
-	width: 310px;
+	width: auto;
 	height: 180px;
-	background: #F8F8F8;
 	margin: 30px;
+	text-align: center;
 }
 
 .note p {
+	max-width: 800px;
 	position: absolute;
 	top: 20%;
 	font-family: Poiret One;
@@ -73,8 +74,14 @@ summary {
 
 li {
 	margin-bottom: 4px;
+	list-style-position: inside;
+
 }
 
 input:checked + span {
     text-decoration: line-through;
    }
+
+ul {
+	padding-inline-start: 10px;
+}

@@ -4,7 +4,9 @@ html {
 }
 
 html, body {
- 	overflow-x: hidden;
+  /*  height: 100%;
+    width: 100%;*/
+    overflow-x: hidden;
 	margin: 10px 5px ;
 }
 
@@ -71,3 +73,7 @@ summary {
 li {
 	margin-bottom: 4px;
 }
+
+input:checked + span {
+    text-decoration: line-through;
+   }

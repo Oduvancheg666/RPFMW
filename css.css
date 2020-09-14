@@ -67,3 +67,7 @@ summary {
 	text-align: center;
 	color: #767676;
 }
+
+li {
+	margin-bottom: 4px;
+}

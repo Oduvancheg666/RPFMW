@@ -4,10 +4,10 @@ html {
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 20px;
+  /*  height: 100%;
+    width: 100%;*/
     overflow-x: hidden;
+	margin: 10px 5px ;
 }
 
 h1 {
@@ -21,6 +21,7 @@ h1 {
 }
 body {
 	background: #EDEDED;
+
 }
 
 summary {
@@ -48,6 +49,7 @@ summary {
 	font-weight: normal;
 	font-size: 18px;
 	color: #4D4646;
+	margin: -8px -17px;
 }
 
 .note {

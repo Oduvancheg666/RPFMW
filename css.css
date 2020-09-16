@@ -73,8 +73,10 @@ summary {
 }
 
 li {
-	margin-bottom: 5px;
-	list-style-position: inside;
+	margin-bottom: 4px;
+	list-style-position: outside;
+	list-style-type: disc;
+  	
 
 }
 
@@ -83,5 +85,5 @@ input:checked + span {
    }
 
 ul {
-	padding-inline-start: 1px;
+	padding-inline-start: 19px;
 }

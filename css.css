@@ -73,7 +73,7 @@ summary {
 }
 
 li {
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 	list-style-position: inside;
 
 }
@@ -83,5 +83,5 @@ input:checked + span {
    }
 
 ul {
-	padding-inline-start: 10px;
+	padding-inline-start: 1px;
 }

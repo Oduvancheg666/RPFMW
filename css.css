@@ -4,8 +4,6 @@ html {
 }
 
 html, body {
-  /*  height: 100%;
-    width: 100%;*/
     overflow-x: hidden;
 	margin: 10px 5px ;
 }
@@ -19,6 +17,7 @@ h1 {
 	text-align: center;
 	color: #3C3C3C;
 	text-decoration: underline;
+
 }
 body {
 	background: #EDEDED;
@@ -85,5 +84,7 @@ input:checked + span {
    }
 
 ul {
-	padding-inline-start: 19px;
+	padding-inline-start: 24px;
 }
+
+

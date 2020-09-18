@@ -87,4 +87,10 @@ ul {
 	padding-inline-start: 24px;
 }
 
+a {
+	float: right;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	text-decoration: none;
+}
 

@@ -1,774 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Nyam Nyam Cooking</title>
-	<meta charset="utf-8">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css" href="css.css">
-	<meta name="viewport" content="width=device-width, user-scalable=yes">
-</head>
-<body>	
+html {
+   -webkit-text-size-adjust : 100%;
+   text-size-adjust         : 100%
+
+}
+
+html, body {
+    overflow-x: hidden;
+	margin: 10px 5px ;
+
+}
+
+h1 {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: #3C3C3C;
+	text-decoration: underline;
+
+}
+body {
+	background: #EDEDED;
+
+}
+
+.dish {
+	font-family: Roboto Slab, serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: #4D4646;
+}
+ 
+.ingredients {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: #4D4646;
 	
-	<h1 id="top">Рецепты</h1>
+}
+
+.cooking {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #4D4646;
 	
-		<hr >
-	
-		<details onmousedown="return false">
-	  	<summary class="dish">Бисквитный пирог</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  			
-	  				<label>
-				  		<input type="checkbox">	<span>Яйца - 4шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Сахар - 250гр.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Молоко - 150мл.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Растительное масло - 100мл.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Мука - 300гр.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Разрыхлитель теста - 1шт.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Ванилин - 1шт.</span><br>
-				  	</label>
-				  
+}
 
-		  		
-	  		</div>
-	  		<div class="cooking">
-	  		   <p></p>
-	  			<ul>
-				  	 <li>Яйца и сахар взбивать 15 минут.</li> 
-				  	 <li>Добавить молоко. </li>
-				  	 <li>Сливочное масло. </li>
-				  	 <li>Добавить муку, разрыхлитель и ванилин.</li>
-				  	 <li>Замешиваем тесто.</li>
-				  	 <li>Выпекать 50 минут в мультиварке (режим "Выпечка")</li>
-		  	 	</ul>
-		  	</div>
-		  	<hr>
-		</details>
-	 	<br>
+.note {
+	position: relative;
+	width: auto;
+	height: 180px;
+	margin: 30px;
+	text-align: center;
+}
 
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Блинчики</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  			
-	  				<label>
-				  		<input type="checkbox">	<span>Яйца - 2-3шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Молоко - 3 стакана.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Мука - 1ст.л.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Сахар - 3-5ст.л.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соль - 2ч.л.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Растительное масло.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Сливочное масло.</span><br>
-				  	</label>
-				
-				  
+.note p {
+	max-width: 800px;
+	position: absolute;
+	top: 20%;
+	font-family: Poiret One;
+	font-style: normal;
+	font-size: 24px;
+	text-align: center;
+	color: #767676;
+}
 
-		  		
-	  		</div>
-	  			<p> 	</p>
-	  		<div class="cooking">
-	  	
-	  			<ul>
-				  	 <li>Яйца взбить с сахаром и солью.</li> 
-				  	 <li>Добавить молоко. </li>
-				  	 <li>Добавлять муку, по чуть-чуть помешивая тесто</li>
-				  	 <li>Жарить примерно на 130° </li>
-				  	 <li>Сковородку смазывать растительным маслом после каждого блинчика. </li>
-		  	 	</ul>
-		  	 </div>
-		  	 <div class="note">
-				 	<p> Если блинчики плохо переворачиваются и рвутся - добавить еще немного муки.</p>
-			 </div>
-		 
-		  	<hr>
-	 	</details>
-	 	<br>
+li {
+	margin-bottom: 4px;
+	list-style-position: outside;
+	list-style-type: disc;
+  	
 
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Борщ</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  			
-	  				<label>
-				  		<input type="checkbox">	<span>Мясо на кости - 0.5кг. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Картошка - 3шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Капуста - 300гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лук - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Перец болгарский - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Свекла - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Морковь - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Помидор - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Яблочный уксус 9% - 1ст.л. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Зелень</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Чеснок</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Зелень</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лавровый лист</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соль, перец горошком</span><br>
-				  	</label>
-				    </div>
+}
 
-	  				<p></p>
-			  		
-			<div class="cooking">
-			  	
-			  			<ul>
-						  	 <li>Мясо варить мин 20-40 (или пока не довариться мясо), снимая пенку и ситечком собирая ошмётки.</li> 
-						  	 <li>(Можно достать мясо и порезать на удобные кусочки) </li>
-						  	 <li>Картошку нарезать кубиками и добавить в бульон </li>
-						  	 <li>Добавить нарезанную капусту</li>
-						  	 <li>Пока всё варится, сделать <details> <summary>пережарку:</summary>
-						  	 	<ul> 
-						  	 		<li>На сковороде пожарить лук до золотистости</li>
-						  	 		<li>Добавить перец болгарский, натёртую морковь, натёртую свеклу. </li>
-						  	 		<li>Помидор разрезать на две части и тереть в сковородку без шкурки</li> 
-						  	 		<li>Добавить 1 сл.л. яблочного уксуса</li> 
-						  	 		<li>Тушить под крышкой на небольшом огне (для индукции 100°) 10-20 мин.</li> 
-						  	 	</ul>
-						  	 	</details>
-						  	 	
+input:checked + span {
+    text-decoration: line-through;
+   }
 
-						  	 </li>	
-						  	 <li>Добавить всю пережарку в кастрюлю с бульоном.</li> 
-						  	 <li>Посолить</li>
-						  	 <li>Добавить специи и зубчик чеснока.</li>
-						  	 <li>Добавить мясо и варить 5-10мин.</li>
-				  	 	</ul>	
-			 </div>
-				  
-			<hr>	
-		</details>
-		<br>
-	 	
-	 
-		<details onmousedown="return false">
-	 	<summary class="dish">Лагман</summary>
-	 		<p></p>
-	  		<div class="ingredients">
-	  		
-	  			
-				  	<label>
-				  	 	<input type="checkbox">	<span>	Мясо - 500гр.  </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>	Лапша - 400гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Сладкий перец - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Помидоры - 2шт. 🍅 </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лук - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Чеснок - 2 зубчика. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Петрушка - небольшой пучок </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соль, перец - по вкусу </span><br>
-				  	</label>
-				  	
-			
-	  		</div>
-	  		<div class="cooking">
-	  		<p></p>
-		  		<ul>
-				  		<li>Мясо и овощи нарезать кубиками. </li>
-					  	<li>Мясо обжарить.</li>
-					  	<li>Добавить морковь, лук, перец и помидор. Обжарить.  </li>
-					  	<li>Заливаем водой и до готовности мяса тушим. </li>
-					  	<li>В конце варки добавить картошку.</li>
-					  	<li>Лапшу отварить отдельно.</li>
-				</ul>
-			
-		   	</div>
-			<hr>
-	 	</details>
-	 	<br>
+ul {
+	padding-inline-start: 24px;
+}
 
-	 	<details onmousedown="return false">
-	 	<summary class="dish">Манты</summary>
-	 		<div class="ingredients">
-	 			<p></p>
-		  		<strong>На 1кг. фарша</strong><br>
-		 
-
-				  	<label>
-				  		<input type="checkbox">	<span>Фарш свинина - 500гр.  </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Фарш курица - 500гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лук - 1кг. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Тесто (мука + вода + соль + 2ст.л. подсолнечного масла) </span><br>
-				  	</label>
-		  	
-	  		</div>
-	  		<p></p>
-	  		<div class="cooking">
-	  			<ul>
-		  			<li>Замесить крутое тесто, убрать в пакет и в холодильник.</li>
-		  			<li>Лук резать мелким кубиком. Немного посолить, чтобы дал сок, а потом смешать с фаршем. </li>
-		  			<li>Кружки теста смазать сливочным маслом.</li>
-		  			<li>Поставить на мантышницу после закипания воды.</li>
-		  			<li>Готовить 30-35мин.</li>
-		        </ul>
-	  		</div>
-	  		<hr>
-	 	</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	 	<summary class="dish">Макароны с курицей и грибами</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  				<label>
-				  		<input type="checkbox"> <span>Филе курицы - 400гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Шампиньоны - 400гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Сливки - 250гр  </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Лук - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Чеснок - 2 зубчика. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Макароны - 400гр. </span><br>
-				  	</label>
-	  		</div>
-	  		<p></p>
-	  		<div class="cooking">
-	  			<ul>
-				  	<li>Моем куриное филе. Затем нарезаем его ломтиками. Шампиньоны режем пластинками. Лук режем как нам нравится.Чеснок мелко рубим. </li>
-					<li>Ставим вариться макароны в кипящей подсоленной воде.</li>
-					<li>На большой сковородке разогреваем масло. Отправляем туда куру, жарим на достаточно интенсивном огне. Когда мясо станет белым, солим и перчим.</li>
-					<li>Затем отправляем к ней шампиньоны.</li>
-					<li>Обжариваем все вместе, помешивая, до золотистости (Пока из грибов не испарится жидкость). </li>
-					<li>Затем всыпаем лук, перемешиваем и жарим минуту. Затем кидаем чеснок, поступаем также. </li>
-					<li>Вливаем сливки, уменьшаем огонь до минимума и ждем пока закипит. </li>
-					<li>Пробуем на соль и доперчиваем.</li>
-					<li>Сварившуюся аль-денте пасту (на минуту меньше, чем указано на упаковке), сливаем и отправляем в соус. Перемешиваем и выключаем тут же.</li>
-				</ul>
-				</div>
-				<div class="note">
-				 	<p> Рекомендуется подавать с соусом "Цезарь". </p>
-				</div>
-			<hr>
-		</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-		<summary class="dish">Мясо с фасолью</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  				<label>
-				  		<input type="checkbox">	<span>Мясо (свинина) - 0.5кг.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Одна луковица</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соевый соус - 3 ст.л.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Один зубчик чеснока.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Помидоры - 2-3шт.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Стручковая фасоль</span><br>
-				  	</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			
-	  			 <ul>
-				  	 <li>В соевый соус потереть зубчик чеснок.</li> 
-				  	 <li>Нарезанное мясо замочить в соевом соусе с чесноком (20мин).</li> 
-				  	 <li>Пожарить мясо.</li> 
-				  	 <li>Добавить лук, обжарить.</li> 
-				  	 <li>Добавить фасоль и помидоры.</li> 
-				  	 <li>Тушить под крышкой от 20мин.</li> 
-		  	 	</ul>
-		  	 </div>
-		  	 <div class="note">
-				 	<p>Так же можно добавить кабачок</p>
-			 </div>
-		  	
-		  	<hr>
-		</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Паста</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  		
-				  	<label>
-				  		<input type="checkbox"> <span>Фарш - 500гр. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Лук - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Морковь - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Сельдерей (стебель) - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Чеснок - 2 зубчика. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Томатная паста - 3 столовые ложки. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Соль, перец, куркума, паприка - по вкусу </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Паста (Макароны такие с птичкой) </span><br>
-				  	</label>
-			
-	  		</div>
-	  		<p></p>
-	  		<div class="cooking">
-	  			<ul>
-				  	<li>Лук, морковь, чеснок, сельдерей порезать и жарить 10 мин. </li>
-					<li>Добавить фарш, размять комочки, жарить 10 мин. </li>
-					<li>Добавить немного молока\сливок, жарить 5 мин. </li>
-					<li>Добавить специи, размешать, жарить 5 мин. </li>
-					<li>Добавить томатную пасту, жарить 15 мин. </li>
-					<li>Макароны приготовить Al dente (<em>почти готово</em>).</li>
-				</ul>
-			</div>
-			<hr>
-	 	</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	 	<summary class="dish">Плов</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-		  		<strong>На 1кг. мяса</strong><br>
-		  	
-					  	<label>
-					  		<input type="checkbox"> <span>Мясо - 1кг. </span><br>
-					  	</label>
-				  		<label>
-					  		<input type="checkbox"> <span>Рис для плова - 1кг. </span><br>
-					  	</label>
-				  		<label>
-					  		<input type="checkbox"> <span>Масло - 300мл. </span><br>
-					  	</label>
-				  		<label>
-					  		<input type="checkbox"> <span>Лук - 0,5кг. </span><br>
-					  	</label>
-				  		<label>
-					  		<input type="checkbox"> <span>Чеснок - 2 зубчика. </span><br>
-					  	</label>
-				  		<label>
-					  		<input type="checkbox"> <span>Приправа для плова - 2ст.л. </span><br>
-					  	</label>
-				  
-	  		</div>
-	  		<p></p>
-	  		<div class="cooking">
-	  			<ul>
-			  		<li>Рис замачиваем минут на 30 в холодной воде. </li>
-			  		<li>В раскалённое масло кидаем мясо, обжарить до золотистой корочки</li>
-			  		<li>Потом  добавить лук и морковь, всё обжарить и добавить воды, тушить</li>
-			  		<li>Промытый рис закладываем в казан, заливаем водой на два пальца. </li>
-			  		<li>Добавляем капельку уксуса и приправа для плова, накрыть крышкой</li>
-			  		<li>После того как вода выкипит нужно оставить плов под крышкой на 20 минут.</li>
-			  		
-		  		</ul>
-	  		 </div>
-	  		 <div class="note">
-				 	<p> Узбеки говорят "плов должен поспать"</p>
-			 </div>
-	  		<hr>	
-	 	</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-		<summary class="dish">Рагу</summary>
-	  		<p></p>
-	  		<div class="ingredients">	
-	  				<label>
-				  		<input type="checkbox">	<span>Фарш</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лук</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Кабачок</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Баклажан</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Перец </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Помидор</span><br>
-				  	</label>
-				  		<label>
-				  		<input type="checkbox">	<span>Сыр</span><br>
-				  	</label>
-				  		<label>
-				  		<input type="checkbox">	<span>Соль</span><br>
-				  	</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			 <ul>
-				  	 <li>Фарш обжарить с луком и посолить.</li> 
-				  	 <li>Кабачок обжарить с баклажаном.</li> 
-				  	 <li>Перец обжарить с помидором.</li> 
-				  	 <li>Всё смешать на противени и печь в духовке 10-20 мин.</li> 
-				  	 <li>Перед подачей потереть сверху сыр.</li> 
-		  	 	</ul>
-		  	</div>
-		  	<hr>
-		</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-		<summary class="dish">Рёбра свиные</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  				<label>
-				  		<input type="checkbox">	<span>Рёбра свиные (грудинка на хрящиках)</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соевый соус </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Чеснок</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Помидоры</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соль, перец - по вкусу</span><br>
-				  	</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			 <ul>
-				  	 <li>Рёбра замочить в соевом соусе с чесноком (от 20мин).</li> 
-				  	 <li>Обжарить рёбра на сковороде.</li> 
-				  	 <li>Добавить лук, обжарить.</li> 
-				  	 <li>Добавить нарезанные помидоры.</li> 
-				  	 <li>Посодить и тушить под крышкой от 40 мин.</li> 
-		  	 	</ul>
-		  	 	<div class="note">
-				 <p>В качестве гарнира рекомендуется использовать макароны или картофельное пюре</p>
-				</div>
-		  	</div>
-		  	<hr>
-		</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Чебуреки</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  			
-
-				  	<label>
-				  		<input type="checkbox"> <span>Вода 300мл </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Яйцо - 1шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Соль - 1 чайная ложка </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Подсолнечное масло - две столовые ложки. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Фарш - 0.5кг. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Лук 0.5кг. </span><br>
-				  	</label>
-			  
-	  		</div>
-	  		<p></p>
-	  		<div class="cooking">
-	  			<ul>
-				  	<li>Замесить тесто (как на пальмени), убрать в пакет и в холодильник.</li>
-				  	<li>В фарш добавить лук, соль и перец по вкусу, воду примерно 150мл.</li>
-				  	<li>В сковородку налить масло (2-3см) и жарить чебуреки до румянца.</li>
-				  	<li>Первые чебуреки выкладывать на бумажное полотенце (чтобы масло впиталось).</li>
-			  	</ul>
-			</div>
-			 <div class="note">
-				 	<p> Чем больше тесто лежит в холодильнике, тем оно вкуснее.</p>
-			 </div>
-			<hr>	
-	 	</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Шашлык</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  		
-	  			<label>
-		  		<input type="checkbox"> <span>Мясо (свиная шея) – 1кг.</span><br>
-		  		</label>
-				<label>
-				<input type="checkbox"> <span>Кефир – 1л. </span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Лук – 0.5кг. </span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Минеральная вода – 1.5л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Томатная паста – 2 ст.л.</span><br>
-				</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			<ul>
-			  	<li>Нарезать мясо небольшими кусками, посолить, поперчить. </li>
-			  	<li>Лук нарезать полукольцами, "пожмякать" и смешать с мясом. </li>
-				<li>Добавить кефир, минералку и пару ложек томатной пасты.</li>
-				<li>Оставить маринвоаться на несколько часов</li>
-				<li>Мясо нанизывайте на шампуры без лука. </li>
-				</ul>
-			</div>
-			<div class="note">
-				 	<p>Румяная корка шашлыка - верный признак готовности.</p>
-			</div>
-			<hr>
-		</details>
-	 	<br>
-
-	 	<details onmousedown="return false">
-	  	<summary class="dish">Шурпа</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  		
-				  	<label>
-				  		<input type="checkbox"> <span>Мясо - 1кг  </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Лук - 0,5кг </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Морковь - 0,5кг </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Сладкий перец - 2 шт. </span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox"> <span>Помидоры - 2 шт. </span><br> 
-				  	</label>
-		  		
-		  	</div>
-		  	<p></p>
-	  		<div class="cooking">
-	  			<ul>
-				  	<li>Мясо режем средними кусками, морковь кружками, лук и перец полукольцами. </li>
-				  	<li>Обжариваем, заливаем водой и тушим до полуготовности мяса. </li>
-				  	<li>Картошку режем попалам, если крупная на четыре части. Закидываем. </li>
-				  	<li>Соль и приправу по вкусу (мама рекомендует хмели-сунели). </li>
-				  	<li>За 5 минут до готовности можно посыпать зеленью и накрыть крышкой. </li>
-			  	</ul>
-		  	</div>
-		  	 <div class="note">
-				 	<p> В шурпу можно добавить баклажан, а помидор можно заменить на томатную пасту.</p>
-			 </div> 	
-			<hr>	 
-	 	</details>
-	 	<br>
-	 	
-		<details onmousedown="return false">
-	  	<summary class="dish">Энчилада</summary>
-	  		<p></p>
-	  		<div class="ingredients">
-	  		<h3>Соус:</h3>
-	  			<label>
-		  		<input type="checkbox"> <span>Чеснок – 1шт.</span><br>
-		  		</label>
-				<label>
-				<input type="checkbox"> <span>Лук – 1шт. </span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Орегано – 0,5 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Чили – 0,5 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Базилик – 1 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Соль – 0,5 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Петрушка сушенная – 1 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Тмин – 0,5 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Перец свежемолотый – 0,5 ч.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Томатная паста – 2-3 с.л.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span>Соус Сальса – 2-3 ст.л.</span><br>
-				</label>
-				
-	  			
-	  			<p></p>
- 			
- 			<h3>Основное блюдо:</h3>
-
-				<label>
-				<input type="checkbox"> <span> Лепешки (можно и лаваш) – 10/15 шт.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span> Куриные грудки – 2 шт.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span> Зелень -  петрушка и кинза.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span> Оранжевый чедр - 400гр.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span> Твердый пармезан - 400гр.</span><br>
-				</label>
-				<label>
-				<input type="checkbox"> <span> Мягкая моцарелла - 400гр.</span><br>
-				</label>
-				
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			<ul>
-			  	<li>Обжарить лук и чеснок в масле (сливочное + оливковое\подсолнечное) до прозрачности лука. </li>
-				<li>Добавить томатную пасту и соус сальса, слегка обжарить и добавить стакан воды.</li>
-				<li>Всыпать все приправы, перемешать, 15-20 минут тушить. </li>
-				<li>Курица, соль, перец.</li>
-				<li>Куски куры обжарить на раскаленной сковороде до корки. куски куры</li>
-				<li>Половину соуса добавляем в посудину для запекания и впихиваем в соус курицу с коркой.</li>
-				<li>200 градусов, 30 минут в духовке.</li>
-				<li>После духовки вытащить куру и раздербанить на мелкие волокна.</li>
-				<p></p>
-				<li>Натереть и перемешать весь сыр. (Треть сыра отложить на подачу)</li>
-				<li>Добавить к сыру курицу (1/1)</li>
-				<li>Добавить зелень.</li>
-				<li>Проверить на остроту, соль.</li>
-				<p></p>
-				<li>Лепешки обжарить с двух сторон по 30 сек.</li>
-				<li>Глубокую посудину для запекания смазать одним слоем соуса.</li>
-				<li>Заворачиваем в лепешки куру и сыр, выкладываем в посудину для запекания.</li>
-				<li>Залить остатками соуса и сыра.</li>
-				<li>В духовку, 250 градусов, запекать 15-20 минут.</li>
-			</div>
-			<hr>	
-	 	</details>
-	 	<br>
-
-		
-
-
-<a href="#top">Наверх</a>
-</body>		
-
-</html>
-
-
-<!-- <details onmousedown="return false">
-	<summary class="dish">Name</summary>
-	  		<p></p>
-	  		<div class="ingredients">	
-	  				<label>
-				  		<input type="checkbox">	<span>ingredients</span><br>
-				  	</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			 <ul>
-				  	 <li>cooking</li> 
-		  	 	</ul>
-		  	</div>
-		  	<hr>
-	</details>
-	 	<br> -->
-
+a {
+	margin-right: 5%;
+	margin-bottom: 2%;
+	text-decoration: none;
+	position: sticky;
+	left: 80%;
+	top: 10%;
+}
 

@@ -19,6 +19,7 @@ h1 {
 	text-align: center;
 	color: #3C3C3C;
 	text-decoration: underline;
+	margin-top: 5px;
 
 }
 body {
@@ -98,3 +99,10 @@ a {
 	top: 10%;
 }
 
+#logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 165px;
+    width: 214px;
+}

@@ -25,6 +25,7 @@ h1 {
 body {
 	background: #EDEDED;
 
+
 }
 
 .dish {
@@ -90,14 +91,7 @@ ul {
 	padding-inline-start: 24px;
 }
 
-a {
-	margin-right: 5%;
-	margin-bottom: 2%;
-	text-decoration: none;
-	position: sticky;
-	left: 80%;
-	top: 10%;
-}
+
 
 #logo {
 	display: block;
@@ -106,3 +100,12 @@ a {
     height: 165px;
     width: 214px;
 }
+
+
+
+#goTop {
+	position: fixed;
+	left: 85%;
+	top: 90%;
+	opacity: 0.44; 
+   }

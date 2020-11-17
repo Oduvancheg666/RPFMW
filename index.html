@@ -9,14 +9,34 @@
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<link rel="icon" type="image/png" href="cooking_logo2.png">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+  	<script type="text/javascript">
+	  	$(function() {
+		$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+		$('#goTop').fadeIn();
+		} else {
+		$('#goTop').fadeOut();
+		}
+		});
+		$('#goTop').click(function() {
+		$('body,html').animate({scrollTop:0},700);
+		});
+		});
+	</script>
+
 </head>
 <body>		
-
+	<div id="head">
 	<img id="logo" src="cooking_logo2.png">
 	<h1 id="top">Рецепты</h1>
-	
+    </div>
+	<div id="goTop"><img src="top.png" width="30px" height="30px" /></div>
+
 		<hr >
-	
+		<div id="firstPage">
 		<details onmousedown="return false">
 	  	<summary class="dish">Бисквитный пирог</summary>
 	  		<p></p>
@@ -192,59 +212,8 @@
 			<hr>	
 		</details>
 		<br>
-	 	<details onmousedown="return false">
-		<summary class="dish">Котлеты "Хмель"</summary>
-	  		<p></p>
-	  		<div class="ingredients">	
-	  				<label>
-				  		<input type="checkbox">	<span>Мясо свинина - 650гр.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Мясо говядина - 350гр.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Батон</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Хлеб</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Молоко</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Картошка - 2шт.</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Приправа для фарша</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Соль, перец</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Чеснок</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Лук</span><br>
-				  	</label>
-				  	<label>
-				  		<input type="checkbox">	<span>Панировочные сухари</span><br>
-				  	</label>
-			</div>
-			<p></p>
-	  		<div class="cooking">
-	  			 <ul>
-				  	 <li>Вымачивать батон и хлеб в молоке</li> 
-				  	 <li>Крутить фарш с луком и картошкой в мясорубке</li> 
-				  	 <li>Добавить в фарш приправы, соль</li>
-				  	 <li>Смазать руки растительным маслом и формировать котлеты</li> 
-		  	 	</ul>
-		  	</div>
-		  	<div class="note">
-				 <p>Говядину можно заменить на индейку, пропорции те же.</p>
-			</div> 
-		  	<hr>
-		</details>
-	 	<br>
+	 	
+	 
 		<details onmousedown="return false">
 	 	<summary class="dish">Лагман</summary>
 	 		<p></p>
@@ -611,9 +580,6 @@
 				  	<label>
 				  		<input type="checkbox"> <span>Лук 0.5кг. </span><br>
 				  	</label>
-					 <label>
-				  		<input type="checkbox"> <span>Мука </span><br>
-				  	</label>
 			  
 	  		</div>
 	  		<p></p>
@@ -799,12 +765,13 @@
 			<hr>	
 	 	</details>
 	 	<br>
-
+	 	</div>
 		
 
 
-<a href="#top">Наверх</a>
 </body>		
+
+
 
 </html>
 
@@ -826,4 +793,5 @@
 		  	<hr>
 	</details>
 	 	<br> -->
+
 

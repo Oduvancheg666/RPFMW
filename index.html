@@ -8,17 +8,50 @@
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
-	<link rel="icon" type="image/png" href="cooking_logo2.png">
+	<link rel="shortcut icon" type="image/png" href="cooking_logo2.png">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+
+
 </head>
 <body>		
 	<div id="head">
 	<img id="logo" src="cooking_logo2.png">
 	<h1 id="top">Рецепты</h1>
-    </div>
+	<button id="mainButton">Основное</button>
+	<div id="hei"></div>
+	<button id="salatButton">Салаты</button>
+
 	<div id="goTop"><img src="top.png" width="30px" height="30px" /></div>
 
 		<hr >
-		<div id="firstPage">
+			<div id="salateContent">
+			<details onmousedown="return false">
+				<summary class="dish">Салат из морковки и капусты</summary>
+				  		<p></p>
+				  		<div class="ingredients">	
+				  				<label>
+							  		<input type="checkbox">	<span>Морковь</span><br>
+							  	</label>
+							  	<label>
+							  		<input type="checkbox">	<span>Капуста</span><br>
+							  	</label>
+						</div>
+						<p></p>
+				  		<div class="cooking">
+				  			 <ul>
+							  	 <li>Нарезать морковь и капусту</li> 
+					  	 	</ul>
+					  	 	 <ul>
+							  	 <li>Смешать</li> 
+					  	 	</ul>
+					  	</div>
+					  	<hr>
+				</details>
+	 			<br> 
+			</div>
+		<div id="mainContent">
 		<details onmousedown="return false">
 	  	<summary class="dish">Бисквитный пирог</summary>
 	  		<p></p>
@@ -752,9 +785,8 @@
 
 
 </body>		
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  
- <script type="text/javascript">
+
+	  	<script type="text/javascript">
 	  	$(function() {
 		$(window).scroll(function() {
 		if($(this).scrollTop() != 0) {
@@ -767,8 +799,25 @@
 		$('body,html').animate({scrollTop:0},700);
 		});
 		});
-</script>
+		
+		var salateContent = document.getElementById("salateContent")
+		var salatButton = document.getElementById("salatButton")
+		var mainButton = document.getElementById("mainButton")
+		
+		salatButton.addEventListener("click", () => {
+			salateContent.style.display = "block"
+			mainContent.style.display = "none"
 
+			})
+		mainButton.addEventListener("click", () => {
+			salateContent.style.display = "none"
+			mainContent.style.display = "block"
+
+			})
+
+
+		
+	</script>
 
 </html>
 

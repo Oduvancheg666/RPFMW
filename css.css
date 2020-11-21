@@ -149,10 +149,11 @@ hr {
 
 
 #music {
-	
+	display: none;
 	position: absolute; 
 	left: 5%;
 	top: 5%;
+	font-size: 8px; 
 }
 
 button:focus {

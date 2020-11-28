@@ -13,9 +13,8 @@
 <body>		
 	<img id="logo" src="cooking_logo2.png">
 	
-	<div id="music">
-	<iframe id="frame" frameborder="0" style="border:none;width:50px;height:50px;" width="100%" height="70" src="https://music.yandex.ru/iframe/#playlist/oduvancheg666/3"> <a href='https://music.yandex.ru/users/oduvancheg666/playlists/3'></a> — <a href='https://music.yandex.ru/users/oduvancheg666'>oduvancheg666</a> </iframe>
-	свернуть
+	<div style="display: none" id="music">
+	<iframe frameborder="0" style="border:none;width:50px;height:50px;" width="100%" height="70" src="https://music.yandex.ru/iframe/#playlist/oduvancheg666/3"> <a href='https://music.yandex.ru/users/oduvancheg666/playlists/3'></a> — <a href='https://music.yandex.ru/users/oduvancheg666'>oduvancheg666</a> </iframe>
 	</div>
 	<h1>Рецепты</h1>
 	<button id="mainButton">Основное</button>
@@ -799,38 +798,30 @@
 		});
 		});
 		
-		var salateContent = document.getElementById("salateContent");
-		var salatButton = document.getElementById("salatButton");
-		var mainButton = document.getElementById("mainButton");
+		var salateContent = document.getElementById("salateContent")
+		var salatButton = document.getElementById("salatButton")
+		var mainButton = document.getElementById("mainButton")
 		
 		salatButton.addEventListener("click", () => {
-			salateContent.style.display = "block";
-			mainContent.style.display = "none";
+			salateContent.style.display = "block"
+			mainContent.style.display = "none"
 
-			});
+			})
 		mainButton.addEventListener("click", () => {
-			salateContent.style.display = "none";
-			mainContent.style.display = "block";
+			salateContent.style.display = "none"
+			mainContent.style.display = "block"
 
-			});
-		var logo = document.getElementById("logo");
-		var music = document.getElementById("music");
+			})
+		var logo = document.getElementById("logo")
+		var music = document.getElementById("music")
 		logo.addEventListener("click", () => {
-			music.style.display = "inline";
+			music.style.display = "inline"
 
-			});
-
-		var frame = document.getElementById("frame");
-		
-		music.addEventListener("click", () => {
-			music.style.display = "none";
-			});
-		</script>
-
+			})
 		
 
 		
-	
+	</script>
 	
 </html>
 
